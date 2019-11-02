@@ -25,20 +25,26 @@ def lines_printed_random(string_list):
     print("\n".join(lines))
 
 def odd_lines_printed(string_list):
+
     '''Takes in a list of strings and prints only the
         odd numbered lines'''
+
     for index, line in enumerate(string_list):
         if (index + 1) % 2 == 1:
             print(f"{index + 1} {line}")
 
-poem = '''If you are a dreamer, come in,
-If you are a dreamer, a wisher, a liar,
-A hope-er, a pray-er, a magic bean buyer…
-If you’re a pretender, come sit by my fire
-For we have some flax-golden tales to spin.
-Come in!
-Come in!'''.split("\n")
+poem = '''Hold fast to dreams
+For if dreams die
+Life is a broken-winged bird
+That cannot fly.
+Hold fast to dreams
+For when dreams go
+Life is a barren field
+Frozen with snow'''.split("\n")
 
-# lines_printed_backwards(poem)
-# lines_printed_random(poem)
-# odd_lines_printed(poem)
+
+if __name__ == "__main__":
+    # Uncomment one line at a time to test
+    lines_printed_backwards(poem)
+    # lines_printed_random(poem)
+    # odd_lines_printed(poem)
